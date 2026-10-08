@@ -1,0 +1,147 @@
+body{
+
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+/* Header ve Navbar Düzeni */
+/* Header - CSS Grid ile 3 Eşit Sütunlu Düzen */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Sol ve Sağ eşit genişlikte, Orta kendi içeriği kadar */
+  align-items: center;
+  padding: 1.2rem 5%;
+  box-sizing: border-box;
+  z-index: 1000;
+
+  /* Şeffaf ve Arka Planı Göstermeyen Cam Efekti */
+  background: rgba(8, 12, 22, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Logo (1. Sütun - En Sol) */
+.logo {
+    display: flex;        /* İçindeki öğeleri (img ve a) YAN YANA getirir */
+    align-items: center; /* Öğeleri dikeyde tam ortalar */
+    gap: 10px;           /* Logo ile yazı arasına boşluk koyar */
+}
+.logo img
+{
+   height: 95px;       
+    width: 95px;
+}
+
+.logo a {
+  color: #bac4d3;
+  font-family :'Times New Roman', Times, serif;
+  padding-top: 0%;
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Navigasyon (2. Sütun - Tam Ortada) */
+nav {
+  justify-self: center; /* Sayfanın tam ortasına kilitler */
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+/* Menü Ögeleri */
+.nav-item {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    position: relative;
+    color: #dfe6f0;
+    cursor: pointer;
+    padding: 8px 0;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+/* Üzerine Gelince Yazı Rengi */
+.nav-item:hover {
+    color: #00d2ff;
+}
+
+/* Alt Çizgi Efekti (::after pseudo-element) */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00d2ff;
+    transition: width 0.6s ease;
+    border-radius: 2px;
+}
+
+/* Üzerine Gelindiğinde Çizgiyi Uzat */
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* --- TIKLANAN / SEÇİLİ ÖGE (ACTIVE) --- */
+.nav-item.active {
+    color: #00d2ff;
+    font-weight: 600;
+}
+
+.nav-item.active::after {
+    width: 100%; /* Seçili ögenin altında çizgi sabit kalır */
+}
+
+/* Dil Butonu (3. Sütun - En Sağ) */
+.lang-switch {
+    position: relative;
+    display: flex;
+    align-items: end;
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: #94a3b8;
+}
+
+/* Checkbox'ı Gizle */
+.lang-switch input { display: none; }
+
+/* TR / EN Metinleri */
+.lang-switch span {
+    padding: 4px 8px;
+    border-radius: 15px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+/* Varsayılan Seçili (TR) */
+.lang-switch span:first-of-type {
+    background: #00d2ff;
+    color: #0b0f19;
+}
+
+/* Tıklandığında (EN'ye Geçiş) */
+.lang-switch input:checked ~ span:first-of-type {
+    background: transparent;
+    color: #94a3b8;
+}
+
+.lang-switch input:checked ~ span:last-of-type {
+    background: #00d2ff;
+    color: #0b0f19;
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AISC Research Lab</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png"> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="" />
+        <a href="index.html">AISC RESEARCH LAB</a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="nav-item" href="hakkımızda.html" data-i18n="nav-about"
+              >Hakkımızda</a
+            >
+          </li>
+          <li>
+            <a class="nav-item" href="projeler.html" data-i18n="nav-projects"
+              >Projeler</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-item"
+              href="yayınlar.html"
+              data-i18n="nav-publications"
+              >Yayınlar</a
+            >
+          </li>
+          <li>
+            <a class="nav-item" href="uyeler.html" data-i18n="nav-members"
+              >Üyeler</a
+            >
+          </li>
+          <li>
+            <a class="nav-item" href="iletisim.html" data-i18n="nav-contact"
+              >İletişim</a
+            >
+          </li>
+
+          <label class="lang-switch">
+            <input
+              type="checkbox"
+              id="lang-toggle"
+              onchange="toggleLanguage(this)"
+            />
+            <span class="lang-text lang-tr">TR</span>
+            <span class="lang-text lang-en">EN</span>
+          </label>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      
+      <section class="hero">
+        <div class="hero-content">
+          <h1 data-i18n="nav-logo">
+            Yapay Zekâyı İleri Taşıyor <br />Güvenliği Güçlendiriyoruz
+          </h1>
+          <p data-i18n="nav-paragraf">
+            Yapay zeka, siber güvenlik ve etkili araştırmalar yoluyla <br />
+            daha güvenli bir gelecek inşa ediyoruz
+          </p>
+        </div>
+
+        
+        <div class="hero-image-card">
+          <img src="assets/img/anasayfa.png" alt="Siber Güvenlik AI Görseli" />
+        </div>
+      </section>
+
+      <!--
+      <section class="news-ticker">
+        <div class="news-header">
+          <h1 data-i18n="nav-news">Duyurular <span>& Haberler</span></h1>
+          <div class="accent-line"></div>
+        </div>
+        <div class="ticker-track">
+          <div class="news-card">
+            <span class="badge">Duyuru</span>
+            <h3>
+              Yapay Zeka Ve Siber Savunma Makalesi Yayımlandı.Duyuruyu görmek
+              için tıklayınız
+            </h3>
+          </div>
+          <div class="news-card">
+            <span class="badge">Haber</span>
+            <h3>AISC Ekibi Yeni Araştırma Projesini Başlattı</h3>
+          </div>
+          <div class="news-card">
+            <span class="badge">Toplantı</span>
+            <h3>Otonom Sistemlerde Güvenlik Webinarı</h3>
+          </div>
+          <div class="news-card">
+            <span class="badge">Duyuru</span>
+            <h3>Yeni Akademik Yayın İncelemesi Eklendi</h3>
+          </div>
+          <div class="news-card">
+            <span class="badge">Duyuru</span>
+            <h3>
+              Yapay Zeka Ve Siber Savunma Makalesi Yayımlandı.Duyuruyu görmek
+              için tıklayınız
+            </h3>
+          </div>
+          <div class="news-card">
+            <span class="badge">Duyuru</span>
+            <h3>
+              Yapay Zeka Ve Siber Savunma Makalesi Yayımlandı.Duyuruyu görmek
+              için tıklayınız
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
+-->
+
+    <script src="script.js"></script>
+  </body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col brand-col">
+        <a href="#" class="footer-logo">
+          <span class="logo-text">AISC</span> RESEARCH
+        </a>
+        <p class="footer-desc" data-i18n="nav-halfparagraf" >
+           Yapay zeka, siber güvenlik ve etkili araştırmalar yoluyla daha güvenli bir gelecek inşa ediyoruz.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/company/baun-artificial-intelligence-security-research-lab/home/"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- 2. Kolon: Hızlı Bağlantılar -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="f-hizli-baglantilar">Hızlı Bağlantılar</h4>
+        <ul class="footer-links">
+          
+          <li>
+            <a href="hakkımızda.html" data-i18n="nav-about">Hakkımızda</a>
+          </li>
+          <li><a href="projeler.html" data-i18n="nav-projects">Projeler</a></li>
+          <li>
+            <a href="yayınlar.html" data-i18n="nav-publications">Yayınlar</a>
+          </li>
+          <li><a href="uyeler.html" data-i18n="nav-members">Üyeler</a></li>
+          <li><a href="iletisim.html" data-i18n="nav-contact">İletişim</a></li>
+        </ul>
+      </div>
+
+      
+      <!-- 3. Kolon: Hizmetler / Odak Alanları -->
+      <div class="footer-col">
+        <h4 class="footer-title" data-i18n="f-odak-alanlari">Odak Alanları</h4>
+        <ul class="footer-links">
+          <li data-i18n="f-siber-güvenlik">Siber Güvenlik</li>
+          <li data-i18n="f-Yapay-zeka-rag">Yapay Zeka & RAG</li>
+          <li >DeepFake</li>
+          <li data-i18n="f-saldiri-tespiti">Saldırı Tespiti</li>
+          <li data-i18n="f-veri-analizi">Veri Analizi</li>
+        </ul>
+      </div>
+
+      <!-- 4. Kolon: İletişim Bilgileri -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-title" data-i18n="nav-contact">İletişim</h4>
+        <p><i class="fas fa-envelope"></i> baunaisc@gmail.com</p>
+        <p>
+          <i class="fas fa-map-marker-alt" ></i> Balıkesir Üniversitesi,
+          Balıkesir / Türkiye
+        </p>
+      </div>
+    </div>
+
+    <!-- Alt Telif & Yasal Haklar Şeridi -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; 2026 AISC RESEARCH. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- İkonlar için Font Awesome Kütüphanesi -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</html>
